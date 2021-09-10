@@ -1,0 +1,100 @@
+﻿@page
+@model AfzaSlaughter.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <div class="col-12 border-bottom border-info">
+                <h2 class="text-center" style="color:red">Do you need any help, Please contact us</h2>
+            </div>
+            <p id="contactfirstleterbig">
+                Interested in contacting us? Send us a Email,
+                Shoot us a text, Message us via Homing Pigeon, whatever you want!
+                All our information is below. Can't wait to hear from you!
+            </p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+            <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="info">
+                    <div class="address">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <h3 style="color:red"><br /><br />Address</h3>
+                            </div>
+                            <div class="col-8 text-center">
+                                <address>
+                                    <strong>Information Officer</strong><br />
+                                    Afza Slaughter<br />
+                                    X Leyton Avenue <br />
+                                    Scarborough, ON, M1L3T5<br />
+                                    Phone: <a href="tel:+1-647-926-4644">(647) 926-4644</a><br />
+                                    Email: <a href="email: info@afzait.ca">info@afzait.ca</a>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.8858114574487!2d-79.2794201852378!3d43.69213727911999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce90c672e19d%3A0x6b336d96ccd7cc6d!2s3%20Leyton%20Ave%2C%20Scarborough%2C%20ON%20M1L%203T5!5e0!3m2!1sen!2sca!4v1630783771536!5m2!1sen!2sca" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnRmjpVs9164rm7FsM2LAfrDcMXTEfKG8COsYh-sHE_aMrRw/viewform?embedded=true" width="640" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<hr />
+<!-- For send email to Contact page using jumbotron -->
+<section>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h6 class="display-5 fw-bold">Want to email to <span style="color:tomato">AfzaSlaughter?</span></h6>
+            <p class="col-md-8 fs-4">Please  <a href="mailto: afza22bd@gmail.com" class="btn btn-success">Click Me</a></p>
+        </div>
+    </div>
+</section>
+<hr />
+<!-- For send sms to Contact page using jumbotron -->
+<section>
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <h6 class="display-5 fw-bold">Want to Text to <span style="color:tomato">AfzaSlaughter?</span></h6>
+            <form action="" method="post">
+                <p><textarea></textarea></p>
+                <p><input type="submit" value="Send" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" /></p>
+            </form>
+
+        </div>
+    </div>
+</section>
+<section> dekhte hobe
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color:red">Close</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p style="color:green"><b>@Model.result </b></p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" asp-page="/Contact" value="Close" />
+<button type="button" class="btn btn-primary">Save changes</button>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr />
+<br />
+<br />
+<br />

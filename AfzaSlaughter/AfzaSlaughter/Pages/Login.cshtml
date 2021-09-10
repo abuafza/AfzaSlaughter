@@ -1,0 +1,90 @@
+﻿@page
+@model AfzaSlaughter.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login page";
+}
+<section>
+    <div class="row">
+        <div class="col-md-6 loginimg">
+            <img src="~/img/login_cow.jpeg" />
+        </div>
+        <div class="col-md-6 loginimg">
+            <img src="~/img/login_goat.jpg" />
+        </div>
+    </div>
+</section>
+<section class="loginshadow">
+    <div>
+        <form action="" method="post">
+            <h1 class="h3 mb-3 fw-normal">Welcome to Afza Slaughter</h1>
+
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" asp-for="user.email" required>
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" asp-for="user.password" required>
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Remember me
+                </label>
+            </div>
+            <input class="w-100 btn btn-lg btn-primary" type="submit" value="Login" />
+            <p style="color:red"><b>@Model.error</b></p>
+        </form>
+        <br />
+        <form action="/Signup" method="get">
+            <div class="row">
+                <div class="col-md-12">
+                    <label style="color:yellow; padding-right:.5em;">New User?</label>
+                    <input type="submit" value="Signup" class="btn btn-warning" />
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+@*<section class="loginshadow">
+            <div class="well text-center">
+                    <div>
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="email" asp-for="user.email" placeholder="Enter your email address" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" asp-for="user.password" placeholder="Enter your password" required />
+                                </div>
+                            </div>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12 btn-group-lg">
+                                    <input type="submit" value="Login" class="btn btn-success" />
+                                    <p style="color:red"><b>@Model.error</b></p>
+                                </div>
+                            </div>
+                        </form>
+                        <br />
+                        <div class="row">
+                             <div class="col-md-12">
+                                 <a href=""><label style="color:white">Forgot password? </label></a>
+                             </div>
+                        </div>
+                        <br />
+                        <form action="/Signup" method="get">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label style="color:yellow; padding-right:.5em;">New User?</label>
+                                    <input type="submit" value="Signup" class="btn btn-warning" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+    </section>*@
+<hr />
+<br />
+<br />
+<br />

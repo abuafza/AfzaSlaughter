@@ -1,0 +1,181 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>Welcome to <span>Afza Slaughter </span></h1>
+                <h2>Delivering great service for more than 4 years!</h2>
+            </div>
+            <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+                <a href="~/Video/add_HZv9AnSJ_ze2U.mp4" class="glightbox play-btn"></a>
+            </div>
+
+        </div>
+    </div>
+</section><!-- End Hero -->
+<hr />
+<!-- Meat Technology -->
+<section>
+    <div class="p-sm-1 bg-light">
+        <div class="container-fluid py-sm-0">
+            <h3 class="display-4 fw-bold text-center"><span style="color:tomato">Meat Technology</span></h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <a asp-page="/RedMeat" class="text-reset text-decoration-none" data-aos="zoom-in">
+                <img src="~/img/redmeat.jpg" class="img-thumbnail" />
+                <h4>
+                    Red Meat Slaughterhouse and Processing Facilities
+                </h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a asp-page="/Contact" class="text-reset text-decoration-none">
+                <img src="~/img/poultry.jpg" class="img-thumbnail" />
+                <h4>
+                    Poultry Slaughterhouse and Processing Facilities
+                </h4>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a asp-page="/Contact" class="text-reset text-decoration-none">
+                <img src="~/img/fish.jpg" class="img-thumbnail" />
+                <h4>
+                    Fish Processing Facilities
+                </h4>
+            </a>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Healthy and affordable meat can only reach our tables after being processed at modern
+                facilities. <span style="color:tomato">AfzaSlaughter</span> establishes integrated meat, and processed meat facilities along
+                with modern slaughterhouses. These plants established in accordance with the basis of hygiene,
+                efficiency and operating safety for red meat, chicken and fish fully meet the meat demands
+                of the world. The company designs tailor made projects on demand and delivers turnkey plants
+                including their cooling systems.
+            </p>
+        </div>
+    </div>
+</section>
+<hr />
+<!-----------------Product-------------------->
+<section>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="80" xmlns="http://www.w3.org/2000/svg" role="img"
+                     aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96" />
+                    <text x="20%" y="50%" fill="#dee2e6" dy=".3em">
+                        Choose the Best Slaughterhouse
+                    </text>
+                    <img src="~/img/index1.jpg" class="img-thumbnail" />
+                </svg>
+
+                <div class="card-body">
+                    @*<h5 class="card-title">Card title that wraps to a new line</h5>*@
+                    <p class="card-text">
+                        Choosing the best slaughterhouse is no easy task.
+                        Since animal slaughter must be performed by a skilled and responsible individual,
+                        it is important to choose a slaughterhouse with high-quality service and expertise.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card p-3">
+                <figure class="p-3 mb-0">
+                    <blockquote class="blockquote">
+                        @*<p>A well-known quote, contained in a blockquote element.</p>*@
+                        @*<p>3 Qualities of an Excellent Slaughterhouse (High-Quality Work, Cleanliness, Availability)</p>*@
+                        <p>
+                            3 Qualities of an Excellent Slaughterhouse (High-Quality Work, Cleanliness, Availability)
+                        </p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                        from <cite title="Source Title">Afza Slaughter House</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Afza Slaughter House</text></svg>
+
+                <div class="card-body">
+                    <h5 class="card-title">Largest Organization</h5>
+                    <p class="card-text">Rapid growth of the world population particularly after the ‘50s has exceeded 7.5 billion in 2019. The biggest problem that comes along with this growth is food and nutrition problems. Chicken plays a significant role in the solution to these problems. Annual worldwide chicken meat production reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2022.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card bg-primary text-white text-center p-3">
+                <figure class="mb-0">
+                    <img src="~/img/halal-2850505_640.png" class="img-thumbnail" />
+
+                    @*<blockquote class="blockquote">
+            <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 text-white">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>*@
+                </figure>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img src="~/img/tavuk2.jpg" class="img-thumbnail" />
+
+                    @*<h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+                </div>
+            </div>
+        </div>
+        @*<div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="40%" fill="#868e96" /><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Rapid growth of the world population particularly after the ‘50s has exceeded 7.5 billion in 2019. The biggest problem that comes along with this growth is food and nutrition problems. Chicken plays a significant role in the solution to these problems. Annual worldwide chicken meat production reached 110 million tonnes. Chicken is estimated to be the most produced types of meat after 2022.</text></svg>
+
+            </div>
+        </div>*@
+        @*<div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card p-3 text-end">
+                <figure class="mb-0">
+                    <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>*@
+        <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    @*<h5 class="card-title">Card title</h5>*@
+                    <p class="card-text text-center font-weight-bold">Fresh, Grade: AAA</p>
+                    <p class="card-text"><small class="text-muted">just update</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr />
+
+<br />
+<br />
+<br />
